@@ -17,6 +17,12 @@ The original PSU stays inside, so you can plug in to C14 socket
 - CC/CV charging the battery with PSU
 - button to power on and power off (gracefully) with power indicator
 
+
+## Custom circuit required
+Circuit for switching on and off battery and disconnecting galvanically PSU when powered down
+- see `Schematic.pdf`
+
+
 ## Images
 
 ![](images/image.png)
