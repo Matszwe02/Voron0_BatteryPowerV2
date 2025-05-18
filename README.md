@@ -18,6 +18,11 @@ The original PSU stays inside, so you can plug in to C14 socket
 - button to power on and power off (gracefully) with power indicator
 
 
+## Print settings
+
+- Voron recommended settings, so 4 walls, print with ABS
+- Apply ABS shrinkage, the part is going through the whole printer width so 1mm off will make it not fit
+
 ## Custom circuit required
 Circuit for switching on and off battery and disconnecting galvanically PSU when powered down
 - see `Schematic.pdf`
