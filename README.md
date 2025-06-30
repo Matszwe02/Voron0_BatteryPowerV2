@@ -35,3 +35,9 @@ Circuit for switching on and off battery and disconnecting galvanically PSU when
 ![](images/image2.png)
 ![](images/image3.png)
 
+
+![alt text](images/20250415_165337.jpg)
+![alt text](images/20250415_174152.jpg)
+![alt text](images/20250424_211540.jpg)
+![alt text](images/20250424_211608.jpg)
+![alt text](images/20250424_231250.jpg)
