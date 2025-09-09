@@ -5,9 +5,8 @@ import subprocess
 
 SHUTDOWN_PIN = 26
 
-user = os.environ.get("SUDO_USER") or os.environ.get("USER") or os.listdir('/home')[0]
-
-gcode_console = os.path.join('/home', user, 'printer_data', 'comms', 'klippy.serial')
+home = os.path.expanduser('~')
+gcode_console = os.path.join(home, 'printer_data', 'comms', 'klippy.serial')
 
 
 def run_gcode(command):
@@ -22,6 +21,7 @@ def shutdown_printer(channel):
     run_gcode("_SHUTDOWN")
     sleep(120)
     subprocess.run(["shutdown", "-h", "now"])
+    subprocess.run(["sudo", "shutdown", "-h", "now"])
     sleep(120)
 
 
@@ -35,3 +35,5 @@ gpio.add_event_callback(SHUTDOWN_PIN, shutdown_printer)
 
 while True:
     sleep(60)
+    if gpio.input(SHUTDOWN_PIN) == gpio.HIGH:
+        shutdown_printer()
