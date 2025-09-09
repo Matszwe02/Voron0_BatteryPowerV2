@@ -35,5 +35,5 @@ gpio.add_event_callback(SHUTDOWN_PIN, shutdown_printer)
 
 while True:
     sleep(60)
-    if gpio.input(SHUTDOWN_PIN) == gpio.HIGH:
+    if gpio.input(SHUTDOWN_PIN) == gpio.LOW:
         shutdown_printer()
