@@ -2,7 +2,9 @@
 ![alt text](images/20250424_231250.jpg)
 
 > [v1 version](https://github.com/Matszwe02/Voron0_BatteryPower)
-Make your voron even more reliable and more portable
+
+
+### **Make your voron even more reliable and more portable**
 
 
 This mod allows you to run your voron up to 1h with batteries. It's also a great UPS for it.
